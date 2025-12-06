@@ -16,7 +16,7 @@ class PatientController extends Controller
                             ->orderBy('first_name')
                             ->paginate(10);
         
-        return view('patinets.index', compact('patients'));
+        return view('patients.index', compact('patients'));
     }
 
     /**
