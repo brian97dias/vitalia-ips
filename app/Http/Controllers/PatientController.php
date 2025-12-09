@@ -47,7 +47,7 @@ class PatientController extends Controller
 
         return redirect()
             ->route('patients.index')
-            ->with('success', 'Patient created successfully.');
+            ->with('success', 'Paciente creado satisfactoriamente.');
     }
 
     /**
@@ -86,7 +86,7 @@ class PatientController extends Controller
 
         return redirect()
             ->route('patients.index')
-            ->with('success', 'Patient updated successfully.');
+            ->with('success', 'Paciente actualizado satisfacoriamente.');
     }
 
     /**
@@ -98,6 +98,6 @@ class PatientController extends Controller
         
         return redirect()
             ->route('patients.index')
-            ->with('success', 'Patient deactivated successfully.');
+            ->with('success', 'Paciente inactivado satisfactoriamente.');
     }
 }

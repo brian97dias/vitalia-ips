@@ -18,7 +18,7 @@
                 $selectedType = old('id_type', $patient->id_type ?? '');
             @endphp
                 @foreach ($types as $key => $value)
-                    <option value=" {{ $key }} " @select($selectedType === $key)>
+                    <option value="{{ $key }}" @selected($selectedType === $key)>
                         {{ $value }}    
                     </option>
                 @endforeach  
@@ -32,7 +32,7 @@
             type="text"
             name="id_number"
             id="id_number"
-            value=" {{ old('id_number', $patient->id_number ?? '') }}"
+            value="{{ old('id_number', $patient->id_number ?? '') }}"
             required>    
     </div>
     
@@ -43,7 +43,7 @@
             type="text"
             name="first_name"
             id="first_name"
-            value=" {{ old('first_name', $patient->first_name ?? '') }}"
+            value="{{ old('first_name', $patient->first_name ?? '') }}"
             required>
     </div>
 
@@ -54,7 +54,7 @@
             type="text"
             name="last_name"
             id="last_name"
-            value=" {{ old('last_name', $patient->last_name ?? '') }}"
+            value="{{ old('last_name', $patient->last_name ?? '') }}"
             required 
             >
     </div>
@@ -66,7 +66,7 @@
             type="text"
             name="cellphone"
             id="cellphone"
-            value=" {{ old('cellphone', $patient->cellphone ?? '') }}">
+            value="{{ old('cellphone', $patient->cellphone ?? '') }}">
     </div>
 </div>
 
@@ -78,7 +78,7 @@
             type="text"
             name="eps"
             id="eps"
-            value=" {{ old('eps', $patient->eps ?? '') }}">
+            value="{{ old('eps', $patient->eps ?? '') }}">
     </div>
 
     <div class="col-md-6 mb-3">
